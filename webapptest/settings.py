@@ -19,7 +19,7 @@ from django.core.exceptions import ImproperlyConfigured
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# SECRET_KEY = 
+SECRET_KEY = "t^io1kyzo$a_x$sc5af%6&c^sfy*0@n&mx!#syr817ki3ggbc6"
 # with open(os.path.join(BASE_DIR, 'secrets.json')) as secrets_file:
 #     secrets = json.load(secrets_file)
 
