@@ -1,5 +1,5 @@
 affine==2.3.0
-alembic==1.1.0.dev0
+alembic==1.1.0
 anyio==2.0.2
 apturl==0.5.2
 argon2-cffi==20.1.0
