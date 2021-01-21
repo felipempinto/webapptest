@@ -16,8 +16,6 @@ import json
 import django_heroku
 from django.core.exceptions import ImproperlyConfigured
 
-django_heroku.settings(locals())
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -40,7 +38,7 @@ def get_secret(setting, secrets=secrets):
 SECRET_KEY = get_secret('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True#False
+DEBUG = False
 
 ALLOWED_HOSTS =  ["webapptest27.herokuapp.com"]
 
@@ -140,3 +138,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+
+django_heroku.settings(locals())
