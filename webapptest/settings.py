@@ -16,7 +16,7 @@ import json
 import django_heroku
 from django.core.exceptions import ImproperlyConfigured
 
-# django_heroku.settings(locals())
+django_heroku.settings(locals())
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -42,7 +42,7 @@ SECRET_KEY = get_secret('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True#False
 
-ALLOWED_HOSTS =  []#["webapptest27.herokuapp.com"]
+ALLOWED_HOSTS =  ["webapptest27.herokuapp.com"]
 
 # Application definition
 
